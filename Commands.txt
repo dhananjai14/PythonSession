@@ -1,0 +1,24 @@
+DATE: 02-06-2025
+# Install Python 
+# Install VS code
+
+Gives python version
+```cmd
+python --version
+```
+
+Create virtual environemnt
+```cmd
+python -m venv venv
+```
+
+Activate python env (Windows)
+```cmd
+venv\Scripts\activate
+```
+
+Activate python env (Mac or Linux)
+```cmd
+venv/bin/activate
+```
+
