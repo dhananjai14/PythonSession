@@ -1,3 +1,4 @@
+# keyboard shortcut to comment  ctrl + /
 """
  Numpy 
  Why numpy:
@@ -48,4 +49,90 @@ print(f"NUMPY operation took {time_end - time_now}")
 # print(len(np.linspace(1,10)))
 
 # print(np.random.rand(4))
-print(np.random.randint(1, 10, (2,5)))
+# print(np.random.randint(1, 10, (2,5)))
+
+
+# a = np.array([1,2,3,4,5])
+# print(a.ndim)
+# print(a.shape)
+
+# a = np.array([[[300,2,3,4,5],
+#              [6,7,8,9,0]]] , dtype="int32")
+# print(a)
+# print(a.ndim)
+# print(a.shape)
+
+# a = np.array([[[300,2,3,4,5],
+#                 [6,7,8,9,0]],
+
+#                 [[2,4,6,8,0],
+#                  [1,3,5,7,9]]] , dtype="int32")
+# print(a)
+# a = np.array([1,2,3,4,5])
+# a = np.array([[300,2,3,4,5],
+#              [6,7,8,9,0]])
+# print(a[1,0,1])
+# print(a[1,1,4])
+# print(a[1,1,-1])
+
+
+# Element wise operation in array 
+
+# a = np.array([1,2,4,5,8,9])
+# print(a + 1)
+# a = np.array([1,2,4,5,8,9])
+# print(a - 5)
+# a = np.array([1,2,4,5,8,9])
+# print(a * 4)
+# a = np.array([1,2,4,5,8,9])
+# print(a / 4)
+
+# a = np.array([1,2,4,5,8,9])
+# print(a % 4)
+
+
+# Matrix multiplication 
+a = np.array([[1,2,3],
+              [4,5,6]])
+# print(a.shape)
+# b = np.array([  [10, 20],
+#                 [11, 21],
+#                 [12, 22]])
+# print(a)
+# print(b)
+# print(np.matmul(a,b))
+
+# Broadcasting
+# a = np.array([[1,2,3],
+#               [4,5,6]])
+
+# b = np.array([100, 200, 300])
+
+# print(a + b)
+
+a = np.array([[1,2,3],
+              [4,5,6]])
+
+# print(np.sum(a))
+# print(np.sum(a, axis = 1))
+# print(np.sum(a, axis = 0))
+print(np.mean(a))
+print(np.mean(a, axis = 1))
+print(np.mean(a, axis = 0))
+
+
+# a = np.array([[[300,2,3,4,5],
+#                 [6,7,8,9,0]],
+
+#                 [[2,4,6,8,0],
+#                  [1,3,5,7,9]]] , dtype="int32")
+
+# a[1,1,1 ] = 1000
+# print(a)
+
+a = np.array([1,2,3])
+b = a.copy()
+print(b)
+b[2] = 1000
+print(b) 
+print(a)
